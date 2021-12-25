@@ -8,8 +8,8 @@
 ##
 
 ### Installation Guide
-* Download "certificate.pfx" by clicking the download button above.
-* Click on "certificate.pfx" and select "Install Certificate".
+* Download "certificate.cer" by clicking the download button above.
+* Click on "certificate.cer" and select "Install Certificate".
 * Now Download "SmartPad_0.0.1.0_x64.Msixbundle".
 * Now Double-Click on the downloaded file and Enjoy....!
 
