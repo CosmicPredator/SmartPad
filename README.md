@@ -1,7 +1,8 @@
 ﻿<div align="center">
 <h1>SmartPad</h1>
 <p>A Minimalist Text Editor for Windows 10 & 11</p>
-<a href="">Download</a>
+  <a href="https://drive.google.com/uc?id=17PTTp4VrPkvXuz_-VGPi7g8STfK_jBNx&export=download">Download Certificate</a> <p></p>
+<a href="https://drive.google.com/uc?id=1DH_p3NvSS-PjIke4AOTDMdORVRIAzKF5&export=download">Download App</a>
 </div
 
 ##
