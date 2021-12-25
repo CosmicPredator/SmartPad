@@ -1,0 +1,2 @@
+MainPackage=F:\c#_apps\SmartPad\bin\x86\Release\SmartPad_0.0.1.0_x86.msix
+SymbolPackage=F:\c#_apps\SmartPad\obj\x86\Release\Symbols\SmartPad_0.0.1.0_x86.appxsym

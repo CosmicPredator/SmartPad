@@ -1,0 +1,109 @@
+﻿<Page
+    x:Class="SmartPad.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SmartPad"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    xmlns:ui="using:Microsoft.Toolkit.Uwp.UI" xmlns:animatedvisuals="using:Microsoft.UI.Xaml.Controls.AnimatedVisuals"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True"
+    Loaded="Page_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <RelativePanel x:Name="MasterRelativePanel"
+                       Height="80"
+                       Grid.Row="0"
+                       Background="Transparent">
+            <FontIcon FontFamily="Segoe Fluent Icons"
+                      RelativePanel.AlignLeftWithPanel="True"
+                      RelativePanel.AlignTopWithPanel="True"
+                      Margin="10, 10, 0, 0"
+                      x:Name="FontIconTitle"
+                      Glyph="&#xE62B;"
+                      FontSize="12"
+                      VerticalAlignment="Center"/>
+            <TextBlock Text="SmartPad"
+                       Name="TitleTextBlock"
+                       RelativePanel.RightOf="FontIconTitle"
+                       Margin="10, 7, 0, 0"
+                       FontSize="12"/>
+            <CommandBar RelativePanel.AlignBottomWithPanel="True"
+                        RelativePanel.AlignLeftWithPanel="True"
+                        OverflowButtonVisibility="Collapsed">
+                <CommandBar.PrimaryCommands>
+                    <AppBarButton Icon="Add" Label="File" Click="OpenFileButton_Click">
+                    </AppBarButton>
+                    <AppBarButton Icon="Save" Label="Save File" x:Name="SaveButton" Click="SaveButton_Click"/>
+                    <AppBarSeparator />
+                </CommandBar.PrimaryCommands>
+            </CommandBar>
+            <Button x:Name="SettingsButton"
+                          RelativePanel.AlignRightWithPanel="True"
+                          RelativePanel.AlignBottomWithPanel="True"
+                    Background="Transparent"
+                          Height="40"
+                          Width="50"
+                          PointerEntered="SettingsButton_PointerEntered"
+                          PointerExited="SettingsButton_PointerExited"
+                    Click="SettingsButton_Click"
+                    BorderThickness="0">
+                <Button.Content>
+                    <muxc:AnimatedIcon x:Name="settigsIcon"
+                                       Width="15">
+                        <muxc:AnimatedIcon.Source>
+                            <animatedvisuals:AnimatedSettingsVisualSource/>
+                        </muxc:AnimatedIcon.Source>
+                        <muxc:AnimatedIcon.FallbackIconSource>
+                            <muxc:SymbolIconSource Symbol="Setting"/>
+                        </muxc:AnimatedIcon.FallbackIconSource>
+                    </muxc:AnimatedIcon>
+                </Button.Content>
+            </Button>
+        </RelativePanel>
+        <TextBox Grid.Row="1"
+                     x:Name="MasterEditorBox"
+                     CornerRadius="0"
+                 FontFamily="Consolas"
+                     Margin="-1"
+                     FontSize="20"
+                 AcceptsReturn="True"
+                 TextWrapping="Wrap">
+        </TextBox>
+        <ContentDialog Grid.RowSpan="2"
+                       Grid.ColumnSpan="2"
+                       x:Name="SettingsContentDialog"
+                       CloseButtonText="Close"
+                       Background="{ThemeResource SystemControlAcrylicWindowBrush}">
+            <ContentDialog.Content>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="SmartPad" FontSize="30"/>
+                    <TextBlock Text="v0.0.1" Opacity="0.35"/>
+                    <TextBlock Margin="0, 10, 0, 0">
+                        This app is Licensed under GNU GPL  v3 License.
+                    </TextBlock>
+                    <StackPanel Orientation="Horizontal"
+                                Margin="0, 10, 0, 0">
+                        <TextBlock Text="Developer: "/>
+                        <TextBlock Margin="2, 0, 0, 0">
+                            <Hyperlink NavigateUri="https://github.com/BaraniARR">
+                                BaraniARR
+                            </Hyperlink>
+                        </TextBlock>
+                    </StackPanel>
+                    <TextBlock Margin="0, 10, 0, 0" Text="Get the Source Code at the Offcial Github Page."/>
+                    <TextBlock Margin="0, 10, 0, 0">
+                        <Hyperlink NavigateUri="https://github.com/BaraniARR/SmartPad">
+                            Github Page
+                        </Hyperlink>
+                    </TextBlock>
+                </StackPanel>
+            </ContentDialog.Content>
+        </ContentDialog>
+    </Grid>
+</Page>

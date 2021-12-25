@@ -1,0 +1,6 @@
+MainPackage=F:\c#_apps\SmartPad\bin\x64\Release\SmartPad_0.0.1.0_x64.msix
+SymbolPackage=F:\c#_apps\SmartPad\obj\x64\Release\Symbols\SmartPad_0.0.1.0_x64.appxsym
+ResourcePack=F:\c#_apps\SmartPad\bin\x64\Release\SmartPad_0.0.1.0_scale-100.msix
+ResourcePack=F:\c#_apps\SmartPad\bin\x64\Release\SmartPad_0.0.1.0_scale-125.msix
+ResourcePack=F:\c#_apps\SmartPad\bin\x64\Release\SmartPad_0.0.1.0_scale-150.msix
+ResourcePack=F:\c#_apps\SmartPad\bin\x64\Release\SmartPad_0.0.1.0_scale-400.msix
