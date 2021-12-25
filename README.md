@@ -22,6 +22,6 @@
 
 > Note: SmartPad can only edit `.txt` files for now. Future updates will support more file formats.
 
-#### Licensed Under GNU GPL vs License
+### Licensed Under GNU GPL v3 License
 
-### Copyrights © 2021 - present BaraniARR.,
+#### Copyrights © 2021 - present BaraniARR.,
