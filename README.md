@@ -1,7 +1,7 @@
 ﻿<div align="center">
 <h1>SmartPad</h1>
 <p>A Minimalist Text Editor for Windows 10 & 11</p>
-  <a href="https://github.com/BaraniARR/SmartPad/releases/download/v0.0.1_beta_1/certificate.cer">Download Certificate</a> <p></p>
+  <a href="https://github.com/BaraniARR/SmartPad/releases/download/v0.0.1_beta_1/SmartPad_Certificate.cer">Download Certificate</a> <p></p>
 <a href="https://github.com/BaraniARR/SmartPad/releases/download/v0.0.1_beta_1/SmartPad_0.0.1.0_x64.msixbundle">Download App</a>
 </div
 
