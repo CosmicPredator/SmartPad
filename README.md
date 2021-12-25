@@ -20,7 +20,7 @@
 * Windows 11 Fluent Design.
 * Mica Material Support only in Windows 11.
 
-> Note: SmartPad can only edit text files for now. Future updates will support more file formats.
+> Note: SmartPad can only edit `.txt` files for now. Future updates will support more file formats.
 
 #### Licensed Under GNU GPL vs License
 
